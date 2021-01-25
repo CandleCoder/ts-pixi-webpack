@@ -24,6 +24,5 @@ const playButton = createButton(true)
     .moveTo(36, 30)
     .lineTo(36, 70)
     .lineTo(70, 50);
-
 app.stage.addChild(playButton);
 app.render();
