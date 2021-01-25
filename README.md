@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This Repository Uses Pixi + , Latest Webpack and Typescript. 
+This Repository Uses Pixi 5+ , Latest Webpack and Typescript. 
 
 
 1. Make your own Model ,View Controller According to your requirement and work on it. For now only sample index.ts has been provided.
@@ -11,8 +11,9 @@ This Repository Uses Pixi + , Latest Webpack and Typescript.
   2. For loading assets Webpack is needed to be modified.
   3. Postload is not implemented.
   4. Resize is implemented and Snipped is Provided below.
+  5. The Pixi Sound Manager has been Incorporated.
 
-## Code Samples
+## Entry Point
 
 >  const app = new Application({
     autoStart: false,
@@ -20,10 +21,10 @@ This Repository Uses Pixi + , Latest Webpack and Typescript.
     });
     document.body.appendChild(app.view);
 
-## Installation
+## Installation / Important Commands
 
-> npm i
+> npm i - After Cloning this Repo , Run this Command.
 
-> Build -  npm run build
+> npm run build - This command makes build of the Application. It compiles from ts to js.
 
->  Server -  npm run start
+> npm run start - This starts to server at port 9000 after building the app.
