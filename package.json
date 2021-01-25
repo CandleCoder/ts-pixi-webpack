@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": false,
   "description": "A pixi template with Ts and Webpack",
-  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
