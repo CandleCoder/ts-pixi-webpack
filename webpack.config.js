@@ -1,26 +1,33 @@
 const path = require('path');
+const distPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
-  mode: 'development',
-  entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
-  module: {
+    entry: './src/index.ts',
+    mode: 'development',
+    devtool: 'inline-source-map',
+    module: {
     rules: [
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-      },
-    ],
-  },
+        {
+            test: /\.tsx?$/,
+            use: 'ts-loader',
+            exclude: /node_modules/
+        },
+        {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
+          },
+    ]
+    },
+    resolve: {
+        extensions: [ '.tsx', '.ts', '.js' ]
+    },
+    output: {
+        filename: 'main.js',
+        path: distPath
+    },
+    devServer: {
+        contentBase: distPath,
+        compress: true,
+        port: 9000
+    }
 };

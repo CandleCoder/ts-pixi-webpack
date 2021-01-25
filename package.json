@@ -1,24 +1,27 @@
 {
   "name": "pixi-ts-webpack",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
+  "description": "A pixi template with Ts and Webpack",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "types": "tsc -noEmit"
   },
   "keywords": [],
-  "author": "",
+  "author": "Manikant upadhyay",
   "license": "ISC",
   "devDependencies": {
+    "@types/pixi.js": "^5.0.0",
     "css-loader": "^5.0.1",
+    "pixi-sound": "^3.0.3",
+    "pixi.js": "^5.0.3",
     "style-loader": "^2.0.0",
-    "ts-loader": "^8.0.14",
-    "typescript": "^4.1.3",
-    "webpack": "^5.17.0",
-    "webpack-cli": "^4.4.0"
-  },
-  "dependencies": {
-    "lodash": "^4.17.20"
+    "ts-loader": "^6.0.1",
+    "typescript": "^3.4.5",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
   }
 }
