@@ -1,4 +1,4 @@
-# PIXI, Typescript & Webpack
+# PIXI, Typescript & Webpack with EsLint Enabled.
 
 ## Introduction
 
